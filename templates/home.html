@@ -1,12 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CartNest</title>
-</head>
-<body>
-    <h1>Welcome to CartNest 🛒</h1>
-    <h2>Your Django E-commerce Project is Running Successfully!</h2>
-</body>
-</html>
+{% extends 'base.html' %}
+
+{% block title %}
+Home | CartNest
+{% endblock %}
+
+{% block content %}
+
+<div class="text-center py-5">
+
+    <h1 class="display-4 fw-bold">
+        Welcome to CartNest 🛒
+    </h1>
+
+    <p class="lead mt-3">
+        Shop Smarter. Shop Better.
+    </p>
+
+    <a href="#" class="btn btn-primary btn-lg mt-3">
+        Shop Now
+    </a>
+
+</div>
+
+{% endblock %}
