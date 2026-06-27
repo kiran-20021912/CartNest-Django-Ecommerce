@@ -9,3 +9,22 @@ body{
 footer{
     margin-top:80px;
 }
+
+/* Card Hover Effect */
+
+.card{
+    transition: all 0.3s ease;
+}
+
+.card:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.card {
+    border-radius: 15px;
+}
+
+.card h1 {
+    font-size: 4rem;
+}
