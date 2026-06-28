@@ -28,3 +28,11 @@ footer{
 .card h1 {
     font-size: 4rem;
 }
+
+
+.product-image {
+    height: 250px;
+    object-fit: contain;
+    background-color: #f8f9fa;
+    padding: 10px;
+}
