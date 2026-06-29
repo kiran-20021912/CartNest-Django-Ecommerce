@@ -1,38 +1,35 @@
-body{
-    background-color:#f8f9fa;
+body {
+    background-color: #f8f9fa;
 }
 
-.navbar-brand{
-    font-size:1.6rem;
+.navbar-brand {
+    font-size: 1.6rem;
 }
 
-footer{
-    margin-top:80px;
+footer {
+    margin-top: 80px;
 }
 
-/* Card Hover Effect */
-
-.card{
+/* Card Styling & Hover Effect */
+.card {
+    border-radius: 15px;
     transition: all 0.3s ease;
 }
 
-.card:hover{
+.card:hover {
     transform: translateY(-8px);
     box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-}
-
-.card {
-    border-radius: 15px;
 }
 
 .card h1 {
     font-size: 4rem;
 }
 
-
+/* Product Image Formatting */
 .product-image {
     height: 250px;
-    object-fit: contain;
-    background-color: #f8f9fa;
+    width: 100%;
+    object-fit: contain;  /* Prevents the edges from getting cut off */
+    background-color: #f8f9fa; 
     padding: 10px;
 }
