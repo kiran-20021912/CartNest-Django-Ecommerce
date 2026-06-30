@@ -139,16 +139,14 @@ Home | CartNest
 
     <div class="row">
 
-        <!-- Loop Through All Products -->
-        {% for product in products %}
-
-        <!-- Single Product Card -->
+       {% for product in products %}
         <div class="col-md-3 mb-4">
+
+            <a href="{% url 'product_detail' product.id %}" class="text-decoration-none text-dark">
 
             <div class="card shadow h-100">
 
-                <!-- Display Product Image -->
-                {% if product.image %}
+            {% if product.image %}
                     <img src="{{ product.image.url }}"
                          class="card-img-top product-image"
                          alt="{{ product.name }}">
@@ -190,6 +188,7 @@ Home | CartNest
                 </div>
 
             </div>
+            </a>
 
         </div>
 
@@ -200,4 +199,4 @@ Home | CartNest
 </div>
 
 {% endblock %}
-```
+

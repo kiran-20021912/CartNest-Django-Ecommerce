@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render,get_object_or_404
 from .models import Product, Category
 
 
@@ -27,4 +27,14 @@ def home(request):
     return render(request, 'home.html', {
         'products': products,
         'categories': categories,
+    })
+
+
+def product_detail(request, product_id):
+
+    # Get the product by ID or return 404 if it doesn't exist
+    product = get_object_or_404(Product, id=product_id)
+
+    return render(request, 'product_detail.html', {
+        'product': product
     })

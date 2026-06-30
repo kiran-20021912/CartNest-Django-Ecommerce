@@ -33,3 +33,12 @@ footer {
     background-color: #f8f9fa; 
     padding: 10px;
 }
+
+/* ================= Product Detail Image ================= */
+
+.product-detail-image {
+    height: 550px;
+    object-fit: contain;
+    background-color: #f8f9fa;
+    padding: 20px;
+}
