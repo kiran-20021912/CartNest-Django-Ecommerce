@@ -103,14 +103,16 @@ Shopping Cart | CartNest
 
     {% endif %}
 
-    <div class="d-flex justify-content-end mt-3">
+    <div class="d-flex justify-content-end gap-2 mt-3">
 
-    <a href="{% url 'empty_cart' %}"
-       class="btn btn-outline-danger">
-
-        🗑️ Empty Cart
-
+    <a href="{% url 'place_order' %}" class="btn btn-success">
+        🛒 Place Order
     </a>
+
+    <a href="{% url 'empty_cart' %}" class="btn btn-danger">
+        🗑️ Empty Cart
+    </a>
+
 
 </div>
 
